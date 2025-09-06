@@ -1,0 +1,30 @@
+{
+  "name": "projectmanagement",
+  "version": "1.0.0",
+  "description": "a project management application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r1t1ka-lodhi/Project-Management.git"
+  },
+  "keywords": [
+    "backend",
+    "my",
+    "course",
+    "API",
+    "creation"
+  ],
+  "author": "Ritika Lodhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r1t1ka-lodhi/Project-Management/issues"
+  },
+  "homepage": "https://github.com/r1t1ka-lodhi/Project-Management#readme",
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
