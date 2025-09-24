@@ -50,4 +50,40 @@ const loginValidation = () =>{
             .trim()
     ]
 }
-export {userRegisterValidation, loginValidation};
+
+const userChangePasswordValidation = () =>{
+    return [
+        body("oldPassword")
+            .notEmpty()
+            .withMessage("Old password is required"),
+        body("newPassword")
+            .notEmpty()
+            .withMessage("New password is required")
+    ]
+}
+
+const userForgotPasswordValidation = () =>{
+    return [
+        body("email")
+            .notEmpty()
+            .withMessage("Email is required")
+            .isEmail()
+            .withMessage("Email is not valid")
+    ]
+}
+
+const userResetForgotPasswordValidation = () =>{
+    return [
+        body("newPassword")
+            .notEmpty()
+            .withMessage("New password is required")
+    ]
+}
+
+export {
+    userRegisterValidation, 
+    loginValidation, 
+    userChangePasswordValidation, 
+    userForgotPasswordValidation,
+    userResetForgotPasswordValidation
+};
