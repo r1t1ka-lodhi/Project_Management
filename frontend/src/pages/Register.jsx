@@ -13,7 +13,7 @@ const Register = () => {
     setError('');
     setSuccess('');
     try {
-      await register({ name, email, password });
+      await register({ username: name, email, password });
       setSuccess('Registration successful! You can now login.');
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed');

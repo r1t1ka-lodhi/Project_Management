@@ -12,8 +12,6 @@ const userRegisterValidation = () =>{
             .trim()
             .notEmpty()
             .withMessage("Username is required")
-            .isLowercase()
-            .withMessage("Username must be in lowercase")
             .isLength({min: 3, max: 20})
             .withMessage("Username must be between 3 and 20 characters long"),
         body("password")

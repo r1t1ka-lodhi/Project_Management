@@ -4,6 +4,7 @@
   "description": "a project management application",
   "main": "index.js",
   "type": "module",
+  
   "scripts": {
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"

@@ -5,8 +5,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
-
 const App = () => {
+
   return (
     <Router>
       <nav>
